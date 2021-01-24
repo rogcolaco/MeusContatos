@@ -61,4 +61,8 @@ dependencies {
     // Bill of Materials - Firebase - Autenticacao
     implementation platform('com.google.firebase:firebase-bom:26.3.0')
     implementation 'com.google.firebase:firebase-auth'
+
+    // Bill of Materials - Firebase - Autenticacao Google
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
 }
