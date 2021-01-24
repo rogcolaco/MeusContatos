@@ -175,4 +175,22 @@ class MainActivity : AppCompatActivity(), OnContatoClickListener {
             contatosAdapter.notifyDataSetChanged()
         }
     }
+
+    override fun onStart(){
+        super.onStart()
+
+        //Verifica se o usupario continua logado
+        val email = AutenticadorFirebase.firebaseAuth.currentUser?.email
+        if(email != null){
+            activityMainBinding.bemVindoTv.text = "Seja Bem-Vindo $email"
+        }
+//        else {
+//            if (AutenticadorFirebase.googleSignInClient != null){
+//                activityMainBinding.bemVindoTv.text = "Seja Bem-Vindo"
+//            }
+//            else {
+//                finish()
+//            }
+//        }
+    }
 }
