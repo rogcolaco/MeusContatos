@@ -16,5 +16,7 @@ class CadastrarActivity : AppCompatActivity() {
         setContentView(activityCadastrarBinding.root)
     }
 
-    fun onClick(view: View) {}
+    fun onClick(view: View) {
+
+    }
 }

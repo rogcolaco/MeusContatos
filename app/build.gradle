@@ -54,9 +54,11 @@ dependencies {
     // Gson
     implementation "com.google.code.gson:gson:$gson_version"
 
-    // Bill of Materials - Firebase
+    // Bill of Materials - Firebase - DbRt
     implementation platform('com.google.firebase:firebase-bom:26.1.1')
     implementation "com.google.firebase:firebase-database-ktx:19.5.1"
 
+    // Bill of Materials - Firebase - Autenticacao
     implementation platform('com.google.firebase:firebase-bom:26.3.0')
+    implementation 'com.google.firebase:firebase-auth'
 }
