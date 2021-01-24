@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1039825999921",
+    "firebase_url": "https://contatospdm-bfd87-default-rtdb.firebaseio.com",
+    "project_id": "contatospdm-bfd87",
+    "storage_bucket": "contatospdm-bfd87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039825999921:android:9c400cff39af985aee5d10",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.scl.ads.s5.pdm.meuscontatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039825999921-48muk1119iv0rpn637io1tbo5dilsu6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-PY-mJLJLuqPdtRD6r0fNwGTm-FoNRQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039825999921-48muk1119iv0rpn637io1tbo5dilsu6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039825999921:android:296f52b09c522492ee5d10",
+        "android_client_info": {
+          "package_name": "com.example.meuscontatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039825999921-48muk1119iv0rpn637io1tbo5dilsu6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-PY-mJLJLuqPdtRD6r0fNwGTm-FoNRQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039825999921-48muk1119iv0rpn637io1tbo5dilsu6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
