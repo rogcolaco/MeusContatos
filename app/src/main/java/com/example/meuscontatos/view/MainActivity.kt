@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.meuscontatos.R
 import com.example.meuscontatos.adapter.ContatosAdapter
 import com.example.meuscontatos.adapter.OnContatoClickListener
+import com.example.meuscontatos.controller.AutenticadorFirebase
 import com.example.meuscontatos.controller.ContatoController
 import com.example.meuscontatos.databinding.ActivityMainBinding
 import com.example.meuscontatos.model.Contato
@@ -110,14 +111,21 @@ class MainActivity : AppCompatActivity(), OnContatoClickListener {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean =
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.novoContatoMi) {
             val novoContantoIntent = Intent(this, ContatoActivity::class.java)
             startActivityForResult(novoContantoIntent, NOVO_CONTATO_REQUEST_CODE)
             true
         }
-        else
-            false
+
+        if (item.itemId == R.id.sairMi) {
+            AutenticadorFirebase.firebaseAuth.signOut()
+            finish()
+            true
+        }
+
+        return false
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
