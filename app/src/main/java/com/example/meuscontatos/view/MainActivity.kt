@@ -120,6 +120,7 @@ class MainActivity : AppCompatActivity(), OnContatoClickListener {
 
         if (item.itemId == R.id.sairMi) {
             AutenticadorFirebase.firebaseAuth.signOut()
+            AutenticadorFirebase.googleSignInClient?.signOut()
             finish()
             true
         }
@@ -184,13 +185,13 @@ class MainActivity : AppCompatActivity(), OnContatoClickListener {
         if(email != null){
             activityMainBinding.bemVindoTv.text = "Seja Bem-Vindo $email"
         }
-//        else {
-//            if (AutenticadorFirebase.googleSignInClient != null){
-//                activityMainBinding.bemVindoTv.text = "Seja Bem-Vindo"
-//            }
-//            else {
-//                finish()
-//            }
-//        }
+        else {
+            if (AutenticadorFirebase.googleSignInClient != null){
+                activityMainBinding.bemVindoTv.text = "Seja Bem-Vindo"
+            }
+            else {
+                finish()
+            }
+        }
     }
 }
