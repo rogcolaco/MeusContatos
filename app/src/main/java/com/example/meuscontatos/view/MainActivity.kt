@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.meuscontatos.R
@@ -19,6 +18,9 @@ import com.example.meuscontatos.view.MainActivity.Extras.EXTRA_CONTATO
 import com.example.meuscontatos.view.MainActivity.Extras.VISUALIZAR_CONTATO_ACTION
 
 class MainActivity : AppCompatActivity(), OnContatoClickListener {
+
+    //SHA1: CB:6C:B9:FD:79:AD:4E:C1:4B:EF:C0:1F:14:15:9F:CB:1B:3D:00:B8
+
     // Data source do Adapter
     private lateinit var contatosList: MutableList<Contato>
     // Adapter do RecyclerView

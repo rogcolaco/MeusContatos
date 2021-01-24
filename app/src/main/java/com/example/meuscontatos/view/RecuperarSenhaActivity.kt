@@ -2,6 +2,7 @@ package com.example.meuscontatos.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.meuscontatos.databinding.ActivityRecuperarSenhaBinding
 
 class RecuperarSenhaActivity : AppCompatActivity() {
@@ -14,4 +15,6 @@ class RecuperarSenhaActivity : AppCompatActivity() {
         activityRecuperarSenhaBinding = ActivityRecuperarSenhaBinding.inflate(layoutInflater)
         setContentView(activityRecuperarSenhaBinding.root)
     }
+
+    fun onClick(view: View) {}
 }
