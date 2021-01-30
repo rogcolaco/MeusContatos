@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "br.edu.ifsp.scl.ads.s5.pdm.meuscontatos"
+        applicationId "com.example.meuscontatos"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
